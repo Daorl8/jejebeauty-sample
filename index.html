@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>JEJE BEAUTY 제제뷰티 | Gentle Waxing Studio · 파주 운정 야당 왁싱</title>
+<meta name="description" content="Gentle waxing studio in Unjeong, Paju. 파주 운정 야당역 제제뷰티. 저통증 브라질리언 왁싱 · 커플 · 임산부 · 남자 왁싱, 페이스 왁싱, 자디니 헤드스파. 남자 왁서 · 여자 왁서 선택." />
+<link rel="canonical" href="https://jejebeauty-sample.lgt3232.workers.dev/" />
+<meta name="theme-color" content="#FFFFFF" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:site_name" content="JEJE BEAUTY" />
+<meta property="og:title" content="JEJE BEAUTY 제제뷰티 | Gentle Waxing Studio" />
+<meta property="og:description" content="Gentle waxing, quietly done. 파주 운정 야당역 저통증 왁싱 · 헤드스파." />
+<meta property="og:url" content="https://jejebeauty-sample.lgt3232.workers.dev/" />
+<meta property="og:image" content="https://jejebeauty-sample.lgt3232.workers.dev/og-jeje.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<!-- 시안 도메인 = jejebeauty-sample.lgt3232.workers.dev. 고객 인계 시 grep lgt3232 → canonical·og:url·og:image·JSON-LD url/image 5곳 치환 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "제제뷰티 JEJE BEAUTY",
+  "url": "https://jejebeauty-sample.lgt3232.workers.dev/",
+  "image": "https://jejebeauty-sample.lgt3232.workers.dev/og-jeje.jpg",
+  "telephone": "+82-507-1340-7754",
+  "description": "파주 운정 야당역 저통증 왁싱 · 페이스 왁싱 · 자디니 헤드스파. 남자 왁서 · 여자 왁서 선택.",
+  "address": { "@type": "PostalAddress", "streetAddress": "소리천로 25 유은타워7차 401호", "addressLocality": "파주시", "addressRegion": "경기도", "addressCountry": "KR" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "11:00", "closes": "21:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "11:00", "closes": "19:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/jeje_beauty__/", "https://blog.naver.com/jejewaxing"]
+}
+</script>
+<script>document.documentElement.className+=' js';</script>
+<style>
+/* ── 폰트 (전부 로컬 서브셋 · OFL)
+     영문 제목 = Gilda Display (GHEA Ararat 무료 대체 · 가는 플레어 세리프)
+     한글·본문·작은 영문 = Interop (Inter + 본고딕 페어링 · jhaemin) */
+@font-face{ font-family:"JJ Display"; font-weight:400; font-display:swap; src:url("jj-gilda.woff2") format("woff2"); }
+@font-face{ font-family:"JJ Sans"; font-weight:400; font-display:swap; src:url("jj-interop-400.woff2") format("woff2"); }
+@font-face{ font-family:"JJ Sans"; font-weight:500; font-display:swap; src:url("jj-interop-500.woff2") format("woff2"); }
+
+:root{
+  --white:#FFFFFF;
+  --mist:#F4F4F3;      /* 아주 옅은 회색 면 (중성) */
+  --line:#E3E3E1;
+  --ink:#151515;
+  --soft:#5C5C5A;      /* 흰 바탕 6.6:1 */
+  --neon:#B9F322;      /* 인포크(리틀리) 커버의 형광 녹색 · 최소 사용: 키커 점 · Best · 버튼 호버 · 선택 */
+  --disp:"JJ Display","JJ Sans",sans-serif;
+  --sans:"JJ Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --wrap:1180px;
+}
+*{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body{ margin:0; background:var(--white); color:var(--ink); font-family:var(--sans); font-size:15px; line-height:1.75; letter-spacing:-.005em; word-break:keep-all; overflow-x:hidden; }
+img{ display:block; max-width:100%; height:auto; }
+a{ color:inherit; text-decoration:none; }
+::selection{ background:var(--neon); color:var(--ink); }
+:focus-visible{ outline:2px solid var(--ink); outline-offset:3px; }
+.wrap{ width:min(100% - 40px, var(--wrap)); margin:0 auto; }
+.sr{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+
+/* 공통 타이포 */
+.label{ font-size:.72rem; font-weight:500; letter-spacing:.2em; text-transform:uppercase; color:var(--soft); margin:0; }
+.label .ko{ letter-spacing:.04em; text-transform:none; margin-left:8px; font-weight:400; }
+h1,h2,h3{ font-family:var(--disp); font-weight:400; letter-spacing:-.01em; margin:0; }
+h2{ font-size:clamp(2.1rem,5vw,3.6rem); line-height:1.08; }
+.ko-t{ display:block; font-family:var(--sans); font-size:.95rem; font-weight:400; letter-spacing:-.005em; color:var(--soft); margin-top:14px; line-height:1.6; }
+.lead{ color:var(--soft); max-width:36em; }
+
+/* 버튼 */
+.btn{ display:inline-flex; align-items:center; gap:10px; height:50px; padding:0 24px; border:1px solid var(--ink); font-size:.86rem; font-weight:500; letter-spacing:.02em; transition:background .25s ease, color .25s ease, border-color .25s ease; }
+.btn small{ font-weight:400; opacity:.75; }
+.btn.dark{ background:var(--ink); color:var(--white); }
+.btn.line{ background:transparent; }
+@media (hover:hover){
+  .btn.dark:hover{ background:var(--neon); color:var(--ink); border-color:var(--neon); }
+  .btn.line:hover{ background:var(--ink); color:var(--white); }
+}
+
+/* 헤더 */
+.site-head{ position:sticky; top:0; z-index:50; background:rgba(255,255,255,.94); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+.site-head .wrap{ display:flex; align-items:center; justify-content:space-between; height:68px; }
+.brand{ display:flex; align-items:center; gap:12px; }
+.brand img{ height:40px; width:auto; }
+.brand span{ font-family:var(--disp); font-size:1.15rem; letter-spacing:.12em; }
+.nav{ display:none; gap:30px; font-size:.8rem; letter-spacing:.14em; text-transform:uppercase; }
+.nav a{ position:relative; padding:4px 0; }
+.nav a::after{ content:""; position:absolute; left:0; right:0; bottom:-2px; height:1px; background:var(--ink); transform:scaleX(0); transform-origin:left; transition:transform .3s ease; }
+@media (hover:hover){ .nav a:hover::after{ transform:scaleX(1); } }
+.site-head .btn{ height:40px; padding:0 18px; font-size:.8rem; }
+@media (min-width:900px){ .nav{ display:flex; } }
+
+/* 히어로 */
+.hero{ padding:clamp(36px,6vw,80px) 0 clamp(56px,8vw,110px); }
+.hero .wrap{ display:grid; gap:40px; }
+.kicker{ display:flex; align-items:center; gap:10px; }
+.kicker::before{ content:""; width:8px; height:8px; background:var(--neon); border:1px solid var(--ink); }
+.hero h1{ font-size:clamp(3rem,8.4vw,6.6rem); line-height:1; margin:26px 0 0; }
+.hero h1 em{ font-style:normal; display:block; padding-left:.9em; }
+.hero .ko-t{ font-size:1.05rem; color:var(--ink); margin-top:26px; }
+.hero .lead{ margin:14px 0 30px; }
+.cta{ display:flex; flex-wrap:wrap; gap:10px; }
+.hero-meta{ display:flex; flex-wrap:wrap; gap:8px 26px; margin:38px 0 0; padding:18px 0 0; border-top:1px solid var(--line); font-size:.8rem; color:var(--soft); }
+.hero-meta b{ font-weight:500; color:var(--ink); margin-right:6px; }
+.slides{ position:relative; aspect-ratio:4/5; overflow:hidden; background:var(--mist); }
+.slides img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.04); transition:opacity 1.4s ease, transform 6s ease; }
+.slides img.on{ opacity:1; transform:scale(1); }
+.slides figcaption{ position:absolute; left:0; bottom:0; display:flex; gap:14px; padding:12px 16px; background:var(--white); font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; }
+.slides figcaption span:first-child{ color:var(--soft); }
+@media (min-width:900px){
+  .hero .wrap{ grid-template-columns:1.1fr .9fr; align-items:end; gap:64px; }
+}
+
+/* 섹션 */
+.sec{ padding:clamp(72px,10vw,140px) 0; }
+.sec.mist{ background:var(--mist); }
+.head{ display:grid; gap:18px; margin-bottom:clamp(36px,5vw,64px); }
+.head .lead{ margin:0; }
+@media (min-width:900px){ .head.split{ grid-template-columns:1fr 1fr; align-items:end; gap:60px; } }
+
+/* About */
+.about{ display:grid; gap:40px; }
+.about figure{ margin:0; }
+.about blockquote{ margin:0 0 26px; font-family:var(--disp); font-size:clamp(1.5rem,3vw,2.1rem); line-height:1.35; }
+.about blockquote small{ display:block; font-family:var(--sans); font-size:.92rem; color:var(--soft); margin-top:10px; }
+.facts{ display:grid; grid-template-columns:repeat(2,1fr); border-top:1px solid var(--ink); margin-top:34px; }
+.facts div{ padding:22px 0 20px; border-bottom:1px solid var(--line); }
+.facts div:nth-child(odd){ padding-right:16px; border-right:1px solid var(--line); }
+.facts div:nth-child(even){ padding-left:20px; }
+.facts b{ display:block; font-family:var(--disp); font-weight:400; font-size:clamp(2rem,4vw,2.8rem); line-height:1; }
+.facts span{ display:block; margin-top:10px; font-size:.82rem; color:var(--soft); line-height:1.5; }
+.facts span i{ display:block; font-style:normal; color:var(--ink); font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; }
+@media (min-width:900px){ .about{ grid-template-columns:.85fr 1.15fr; gap:80px; align-items:center; } }
+
+/* Studio 화보 그리드 */
+.book{ display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+.book figure{ margin:0; position:relative; overflow:hidden; background:var(--mist); }
+.book img{ width:100%; height:100%; object-fit:cover; aspect-ratio:1/1; transition:transform 1.2s ease; }
+.book figcaption{ display:flex; justify-content:space-between; gap:10px; padding:10px 0 0; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--soft); }
+.book figcaption span:last-child{ letter-spacing:0; text-transform:none; }
+.book .tall img{ aspect-ratio:4/5; }
+.book .wide{ grid-column:1 / -1; }
+.book .wide img{ aspect-ratio:16/10; }
+@media (hover:hover){ .book figure:hover img{ transform:scale(1.03); } }
+@media (min-width:900px){
+  .book{ grid-template-columns:repeat(12,1fr); gap:20px; row-gap:40px; }
+  .book .a{ grid-column:1 / span 7; } .book .a img{ aspect-ratio:4/3; }
+  .book .b{ grid-column:9 / span 4; align-self:end; } .book .b img{ aspect-ratio:4/5; }
+  .book .c{ grid-column:2 / span 4; } .book .c img{ aspect-ratio:1/1; }
+  .book .d{ grid-column:7 / span 5; margin-top:90px; } .book .d img{ aspect-ratio:4/5; }
+  .book .e{ grid-column:1 / span 5; margin-top:-40px; } .book .e img{ aspect-ratio:4/5; }
+  .book .f{ grid-column:7 / span 6; align-self:end; } .book .f img{ aspect-ratio:4/3; }
+}
+.amen{ display:flex; flex-wrap:wrap; gap:8px 28px; margin:44px 0 0; padding:20px 0 0; border-top:1px solid var(--line); font-size:.86rem; }
+.amen span::before{ content:"+ "; color:var(--soft); }
+
+/* 서비스 */
+.svc{ border-top:1px solid var(--ink); }
+.svc article{ display:grid; gap:22px; padding:32px 0; border-bottom:1px solid var(--line); }
+.svc .no{ font-family:var(--disp); font-size:1.1rem; color:var(--soft); }
+.svc h3{ font-size:clamp(1.8rem,3.6vw,2.6rem); line-height:1.1; }
+.svc h3 small{ display:block; font-family:var(--sans); font-size:.9rem; color:var(--soft); margin-top:8px; }
+.svc p{ margin:0; color:var(--soft); max-width:30em; }
+.svc .tags{ display:flex; flex-wrap:wrap; gap:6px; margin-top:16px; }
+.svc .tags span{ border:1px solid var(--line); padding:3px 12px; font-size:.78rem; }
+.svc figure{ margin:0; overflow:hidden; background:var(--mist); }
+.svc figure img{ width:100%; aspect-ratio:4/3; object-fit:cover; }
+@media (min-width:900px){
+  .svc article{ grid-template-columns:70px 1fr 1fr 300px; align-items:start; gap:36px; padding:40px 0; }
+  .svc .body{ grid-column:3; }
+  .svc figure{ grid-column:4; }
+}
+
+/* 메뉴 (가격) */
+.acc{ border-top:1px solid var(--ink); }
+.acc details{ border-bottom:1px solid var(--line); }
+.acc summary{ list-style:none; display:grid; grid-template-columns:52px 1fr 22px; align-items:center; gap:8px; padding:24px 0; cursor:pointer; }
+.acc summary::-webkit-details-marker{ display:none; }
+.acc .n{ font-family:var(--disp); color:var(--soft); }
+.acc .t{ font-family:var(--disp); font-size:clamp(1.4rem,2.6vw,1.9rem); line-height:1.2; }
+.acc .t small{ display:block; font-family:var(--sans); font-size:.86rem; color:var(--soft); margin-top:4px; }
+.acc .pm{ position:relative; width:18px; height:18px; justify-self:end; }
+.acc .pm::before, .acc .pm::after{ content:""; position:absolute; left:0; right:0; top:8px; height:1px; background:var(--ink); transition:transform .3s ease; }
+.acc .pm::after{ transform:rotate(90deg); }
+.acc details[open] .pm::after{ transform:rotate(0); }
+.panel{ overflow:hidden; }
+.panel-in{ padding:0 0 30px; }
+@media (min-width:900px){ .panel-in{ padding-left:60px; } }
+.price{ margin:0; }
+.price .row{ display:grid; grid-template-columns:1fr auto; gap:6px 18px; align-items:baseline; padding:14px 0; border-bottom:1px dashed var(--line); }
+.price .row:last-child{ border-bottom:0; }
+.price dt{ font-size:.95rem; }
+.price dt small{ display:block; font-size:.82rem; color:var(--soft); }
+.price dd{ margin:0; font-family:var(--disp); font-size:1.25rem; white-space:nowrap; font-variant-numeric:tabular-nums; }
+.price dd small{ font-family:var(--sans); font-size:.78rem; margin-left:2px; }
+.best{ display:inline-block; margin-left:8px; padding:1px 8px; background:var(--neon); color:var(--ink); font-size:.66rem; font-weight:500; letter-spacing:.12em; text-transform:uppercase; vertical-align:2px; }
+.note{ margin:26px 0 0; padding:0; list-style:none; font-size:.84rem; color:var(--soft); display:grid; gap:4px; }
+.note li::before{ content:"· "; }
+
+/* Why */
+.why{ display:grid; gap:0; border-top:1px solid var(--ink); counter-reset:w; }
+.why li{ list-style:none; display:grid; grid-template-columns:52px 1fr; gap:8px; padding:20px 0; border-bottom:1px solid var(--line); counter-increment:w; }
+.why li::before{ content:counter(w,decimal-leading-zero); font-family:var(--disp); color:var(--soft); }
+.why b{ display:block; font-family:var(--disp); font-weight:400; font-size:1.25rem; line-height:1.3; }
+.why span{ display:block; font-size:.88rem; color:var(--soft); margin-top:4px; }
+@media (min-width:900px){ .why{ grid-template-columns:1fr 1fr; column-gap:60px; } }
+.why-wrap{ padding:0; margin:0; }
+
+/* 필름 스트립 (setInterval 강제 이동) */
+.strip{ overflow:hidden; padding:clamp(40px,6vw,70px) 0; }
+.strip .track{ display:flex; gap:14px; width:max-content; will-change:transform; }
+.strip figure{ margin:0; width:clamp(200px,26vw,320px); flex:none; background:var(--mist); }
+.strip img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
+
+/* Academy */
+.academy{ display:grid; gap:20px; padding:34px 0; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
+.academy h3{ font-size:clamp(1.5rem,3vw,2.1rem); line-height:1.2; }
+.academy p{ margin:0; color:var(--soft); font-size:.9rem; }
+@media (min-width:900px){ .academy{ grid-template-columns:1fr 1.2fr auto; align-items:center; gap:40px; } }
+
+/* Visit */
+.visit{ display:grid; gap:44px; }
+.info{ margin:0; border-top:1px solid var(--ink); }
+.info .row{ display:grid; grid-template-columns:96px 1fr; gap:14px; padding:18px 0; border-bottom:1px solid var(--line); }
+.info dt{ font-size:.72rem; font-weight:500; letter-spacing:.16em; text-transform:uppercase; padding-top:3px; }
+.info dt small{ display:block; letter-spacing:0; text-transform:none; color:var(--soft); font-weight:400; font-size:.8rem; }
+.info dd{ margin:0; font-size:.92rem; }
+.info dd p{ margin:0 0 8px; }
+.info dd p:last-child{ margin:0; }
+.info .en{ display:block; color:var(--soft); font-size:.84rem; }
+.hours{ display:grid; grid-template-columns:auto 1fr; gap:2px 18px; font-variant-numeric:tabular-nums; }
+.links{ display:grid; grid-template-columns:repeat(2,1fr); border-top:1px solid var(--ink); border-left:1px solid var(--line); margin-top:28px; }
+.links a{ display:flex; flex-direction:column; justify-content:space-between; min-height:92px; padding:14px 16px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); transition:background .25s ease; }
+.links a b{ font-weight:500; font-size:.86rem; }
+.links a span{ font-size:.78rem; color:var(--soft); }
+.links a.main{ background:var(--ink); color:var(--white); }
+.links a.main span{ color:#CFCFCF; }
+@media (hover:hover){ .links a:hover{ background:var(--mist); } .links a.main:hover{ background:var(--neon); color:var(--ink); } .links a.main:hover span{ color:var(--ink); } }
+@media (min-width:600px){ .links{ grid-template-columns:repeat(3,1fr); } }
+.mapframe{ width:100%; height:100%; min-height:380px; border:0; filter:grayscale(1) contrast(1.05); }
+@media (min-width:900px){ .visit{ grid-template-columns:1fr 1fr; gap:64px; align-items:stretch; } }
+
+/* 푸터 */
+.foot{ border-top:1px solid var(--line); padding:44px 0 56px; font-size:.82rem; color:var(--soft); }
+.foot .wrap{ display:grid; gap:22px; }
+.foot img{ height:56px; width:auto; }
+.foot p{ margin:0; }
+.foot nav{ display:flex; flex-wrap:wrap; gap:6px 20px; }
+.foot nav a{ color:var(--ink); border-bottom:1px solid var(--line); }
+@media (min-width:900px){ .foot .wrap{ grid-template-columns:auto 1fr auto; align-items:end; gap:50px; } }
+
+/* 리빌 */
+.js .reveal{ opacity:0; transform:translateY(18px); transition:opacity .9s ease, transform .9s ease; }
+.js .reveal.in{ opacity:1; transform:none; }
+</style>
+<noscript><style>.reveal{ opacity:1 !important; transform:none !important; } .slides img:first-child{ opacity:1; transform:none; }</style></noscript>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="JEJE BEAUTY 처음으로"><span>JEJE BEAUTY</span></a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#menu">Menu</a><a href="#studio">Studio</a><a href="#visit">Visit</a>
+    </nav>
+    <a class="btn dark" href="https://naver.me/xPYLWcSH" target="_blank" rel="noopener">Book <small>예약</small></a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="label kicker">Waxing &amp; Care Studio · Unjeong, Paju</p>
+        <h1 id="hero-h">Gentle waxing,<em>quietly done.</em></h1>
+        <p class="ko-t">덜 아픈 왁싱, 그리고 편안한 쉼까지</p>
+        <p class="lead">통증과 트러블에 민감한 원장이 직접 다듬은 저통증 왁싱과 진정 케어. 시술마다 남자 왁서, 여자 왁서 중 편한 쪽을 고를 수 있어요.</p>
+        <div class="cta">
+          <a class="btn dark" href="https://naver.me/xPYLWcSH" target="_blank" rel="noopener">Book on Naver <small>네이버 예약</small></a>
+          <a class="btn line" href="http://pf.kakao.com/_xktUcb/chat" target="_blank" rel="noopener">Kakao Chat <small>카카오 문의</small></a>
+        </div>
+        <p class="hero-meta"><span><b>Waxing</b>왁싱</span><span><b>Face</b>페이스</span><span><b>Head Spa</b>헤드스파</span><span><b>Yadang Stn. 180m</b>야당역 2번 출구</span></p>
+      </div>
+      <figure class="slides reveal" id="slides" aria-label="제제뷰티 왁싱 화보">
+        <img class="on" src="jj-hero.webp" alt="스패출러로 떠올린 부드러운 아이보리 왁스" width="920" height="1150" fetchpriority="high" />
+        <img src="jj-spatula.webp" alt="컵에 꽂힌 나무 왁싱 스패출러" width="900" height="1124" />
+        <img src="jj-room.webp" alt="블라인드 사이로 빛이 드는 흰 시술실" width="1000" height="1000" />
+        <figcaption><span id="slide-no">01 / 03</span><span id="slide-cap">Soft wax</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec mist" id="about" aria-labelledby="about-h">
+    <div class="wrap about">
+      <figure class="reveal"><img loading="lazy" src="jj-sign.webp" alt="제제뷰티 매장 벽면의 JEJE BEAUTY 로고 사인" width="900" height="900" /></figure>
+      <div class="reveal">
+        <p class="label">About<span class="ko">소개</span></p>
+        <h2 id="about-h" style="margin-top:20px">Not just hair removal.<span class="ko-t">왁싱은 단순한 제모가 아니에요</span></h2>
+        <p class="lead" style="margin-top:26px">처음이라 불안한 분, 통증 때문에 왁싱을 포기했던 분을 위해 고객 컨디션에 맞춘 1:1 케어로 진행해요. 제제왁싱이 자체 개발한 저통증 왁싱과 진정 케어 프로그램, 그리고 자디니 헤드스파의 쉼까지 한 공간에서.</p>
+        <div class="facts">
+          <div><b>15</b><span><i>Years in beauty</i>미용 경력 15년</span></div>
+          <div><b>7</b><span><i>Years of waxing</i>왁싱 7년차</span></div>
+          <div><b>3</b><span><i>Waxers at once</i>3인 동시 시술</span></div>
+          <div><b>M / F</b><span><i>Choose your waxer</i>남자 · 여자 왁서 선택</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="head split reveal">
+        <div>
+          <p class="label">Services<span class="ko">시술</span></p>
+          <h2 id="svc-h" style="margin-top:20px">Four ways<br />to feel at ease.<span class="ko-t">제제뷰티의 네 가지 케어</span></h2>
+        </div>
+        <p class="lead">모든 왁싱은 라이콘(LYCON) 제품으로 자극을 줄이고, 시술 후에는 피부 타입에 맞춘 진정 케어로 마무리해요.</p>
+      </div>
+      <div class="svc">
+        <article class="reveal">
+          <span class="no">01</span>
+          <h3>Brazilian Waxing<small>브라질리언 왁싱</small></h3>
+          <div class="body">
+            <p>여자 · 남자 · 커플 브라질리언. 처음 오시는 분도 편하게 받을 수 있도록 통증을 줄인 방식으로 진행하고, 왁싱 후 관리까지 이어서 안내해요.</p>
+            <div class="tags"><span>Women 여자</span><span>Men 남자</span><span>Couple 커플</span><span>Full body 전신</span></div>
+          </div>
+          <figure><img loading="lazy" src="jj-spatula.webp" alt="나무 왁싱 스패출러" width="900" height="1124" /></figure>
+        </article>
+        <article class="reveal">
+          <span class="no">02</span>
+          <h3>Prenatal Waxing<small>임산부 왁싱</small></h3>
+          <div class="body">
+            <p>임산부 전용 제품을 사용하고, 산모 전용 라인과 프리미엄 진정 케어로 진행해요. 3회권도 있어요.</p>
+            <div class="tags"><span>Prenatal products 전용 제품</span><span>Calming care 진정 케어</span></div>
+          </div>
+          <figure><img loading="lazy" src="jj-prenatal.webp" alt="흰 셔츠를 걸친 임산부의 배 실루엣" width="900" height="630" /></figure>
+        </article>
+        <article class="reveal">
+          <span class="no">03</span>
+          <h3>Face Waxing<small>페이스 왁싱 · 눈썹 · 스킨플래닝</small></h3>
+          <div class="body">
+            <p>얼굴형에 맞춘 눈썹 디자인부터 헤어라인, 윤곽 풀페이스, 스킨플래닝까지. 속눈썹펌과 함께 받을 수도 있어요.</p>
+            <div class="tags"><span>Brow design 눈썹</span><span>Hairline 헤어라인</span><span>Full face 풀페이스</span><span>Skin planing</span></div>
+          </div>
+          <figure><img loading="lazy" src="jj-lash.webp" alt="정리된 눈썹과 속눈썹 클로즈업" width="900" height="926" /></figure>
+        </article>
+        <article class="reveal">
+          <span class="no">04</span>
+          <h3>Head Spa &amp; Body<small>자디니 헤드스파 · 밸리 테라피</small></h3>
+          <div class="body">
+            <p>자디니(JARDINI) 아로마 리추얼 헤드스파와 누워서 관리받는 밸리 아로마테라피. 관리보다 쉼이 필요한 날을 위해.</p>
+            <div class="tags"><span>Aroma head spa 아로마</span><span>Scalp care 스칼프</span><span>Belly therapy 복부</span></div>
+          </div>
+          <figure><img loading="lazy" src="jj-spa.webp" alt="거품을 낸 두피를 손으로 관리하는 헤드스파" width="640" height="704" /></figure>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec mist" id="menu" aria-labelledby="menu-h">
+    <div class="wrap">
+      <div class="head split reveal">
+        <div>
+          <p class="label">Menu<span class="ko">가격</span></p>
+          <h2 id="menu-h" style="margin-top:20px">Price list.<span class="ko-t">시술 가격 안내</span></h2>
+        </div>
+        <p class="lead">네이버 예약 기준 가격이에요. 런칭 · 첫 방문 이벤트 가격은 기간에 따라 바뀔 수 있으니 예약 전에 한 번 확인해 주세요.</p>
+      </div>
+      <div class="acc reveal">
+        <details open>
+          <summary><span class="n">i.</span><span class="t">Brazilian &amp; Body<small>브라질리언 · 바디 왁싱</small></span><span class="pm" aria-hidden="true"></span></summary>
+          <div class="panel"><div class="panel-in">
+            <dl class="price">
+              <div class="row"><dt>Women, first visit<small>여자 브라질리언 (첫 방문)</small></dt><dd>44,000<small>원</small></dd></div>
+              <div class="row"><dt>Men, first visit<small>남자 브라질리언 (첫 방문)</small></dt><dd>55,000<small>원</small></dd></div>
+              <div class="row"><dt>Couple, first visit<small>커플 브라질리언 (첫 방문)</small></dt><dd>99,000<small>원</small></dd></div>
+              <div class="row"><dt>Couple, returning<small>커플 왁싱 (재방문 · 남자/여자 왁서 선택)</small></dt><dd>120,000<small>원</small></dd></div>
+              <div class="row"><dt>Prenatal, first visit<small>임산부 브라질리언 (첫 방문) · 산모 전용 라인 + 프리미엄 진정 케어</small></dt><dd>66,000<small>원</small></dd></div>
+              <div class="row"><dt>Women, 3 sessions<small>여자 브라질리언 3회권</small></dt><dd>150,000<small>원</small></dd></div>
+              <div class="row"><dt>Men, 3 sessions<small>남자 브라질리언 3회권</small></dt><dd>180,000<small>원</small></dd></div>
+              <div class="row"><dt>Prenatal, 3 sessions<small>임산부 브라질리언 3회권</small></dt><dd>150,000<small>원</small></dd></div>
+              <div class="row"><dt>Men's Brazilian + legs + sideburns<small>남자 브라질리언 + 다리 + 구레나룻</small></dt><dd>132,000<small>원</small></dd></div>
+              <div class="row"><dt>Full body, for body profile<small>전신 왁싱 (바디프로필 왁싱)</small></dt><dd>240,000<small>원</small></dd></div>
+            </dl>
+          </div></div>
+        </details>
+        <details>
+          <summary><span class="n">ii.</span><span class="t">Face<small>페이스 왁싱 · 눈썹 · 스킨플래닝</small></span><span class="pm" aria-hidden="true"></span></summary>
+          <div class="panel"><div class="panel-in">
+            <dl class="price">
+              <div class="row"><dt>Personal brow design<small>퍼스널 눈썹 디자인 왁싱</small></dt><dd>22,000<small>원</small></dd></div>
+              <div class="row"><dt>Glow trio<small>물광 3종 왁싱 (헤어라인 · 이마 · 눈썹)</small></dt><dd>44,000<small>원</small></dd></div>
+              <div class="row"><dt>Lash perm + brow waxing<small>속눈썹펌 + 눈썹 왁싱</small></dt><dd>44,000<small>원</small></dd></div>
+              <div class="row"><dt>Hairline, brows + lip or sideburns<small>헤어라인 + 눈썹 + 인중 또는 구레나룻</small></dt><dd>55,000<small>원</small></dd></div>
+              <div class="row"><dt>Skin planing<small>깐달걀 스킨플래닝</small></dt><dd>66,000<small>원</small></dd></div>
+              <div class="row"><dt>Contour full face + tune face<small>윤곽 풀페이스 왁싱 + 튠페이스 (작은 얼굴)</small></dt><dd>77,000<small>원</small></dd></div>
+              <div class="row"><dt>Honey-glow contour full face<span class="best">Best</span><small>꿀광 윤곽 풀페이스 왁싱</small></dt><dd>99,000<small>원</small></dd></div>
+            </dl>
+          </div></div>
+        </details>
+        <details>
+          <summary><span class="n">iii.</span><span class="t">Head Spa &amp; Body Care<small>헤드스파 · 바디 케어</small></span><span class="pm" aria-hidden="true"></span></summary>
+          <div class="panel"><div class="panel-in">
+            <dl class="price">
+              <div class="row"><dt>Aroma head spa<small>아로마 헤드스파 (런칭 이벤트)</small></dt><dd>49,000<small>원</small></dd></div>
+              <div class="row"><dt>Couple custom head spa<small>커플 커스텀 헤드스파 (런칭 이벤트)</small></dt><dd>99,000<small>원</small></dd></div>
+              <div class="row"><dt>Scalp head spa + Brazilian, women<small>스칼프 헤드스파 + 브라질리언 (여)</small></dt><dd>99,000<small>원</small></dd></div>
+              <div class="row"><dt>Scalp head spa + Brazilian, men<small>스칼프 헤드스파 + 브라질리언 (남)</small></dt><dd>110,000<small>원</small></dd></div>
+              <div class="row"><dt>Belly aroma therapy<small>누워서 관리받는 밸리 아로마테라피</small></dt><dd>80,000<small>원</small></dd></div>
+            </dl>
+          </div></div>
+        </details>
+      </div>
+      <ul class="note reveal">
+        <li>Happy Time: 평일 11:00 – 15:00 첫 방문가 적용</li>
+        <li>모든 시술은 남자 왁서 · 여자 왁서 중 선택할 수 있어요.</li>
+        <li>이벤트 · 패키지 조건은 네이버 예약 또는 카카오 채널로 문의해 주세요.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="studio" aria-labelledby="studio-h">
+    <div class="wrap">
+      <div class="head split reveal">
+        <div>
+          <p class="label">The Studio<span class="ko">공간</span></p>
+          <h2 id="studio-h" style="margin-top:20px">A quiet room<br />of your own.<span class="ko-t">오롯이 나에게 집중하는 공간</span></h2>
+        </div>
+        <p class="lead">1:1 프라이빗 룸마다 개인 샤워실을 갖췄고, 둘이 함께 받는 커플 왁싱룸도 따로 있어요.</p>
+      </div>
+      <div class="book">
+        <figure class="a wide reveal"><img loading="lazy" src="jj-room.webp" alt="블라인드 빛이 드는 흰 시술실과 투명 의자" width="1000" height="1000" /><figcaption><span>01 Treatment room</span><span>시술실</span></figcaption></figure>
+        <figure class="b tall reveal"><img loading="lazy" src="jj-lounge.webp" alt="햇살이 드는 흰 라운지 소파와 갈대 화병" width="750" height="750" /><figcaption><span>02 Lounge</span><span>대기 공간</span></figcaption></figure>
+        <figure class="c reveal"><img loading="lazy" src="jj-lamp.webp" alt="창가 원형 테이블과 버섯 조명" width="750" height="737" /><figcaption><span>03 Consult table</span><span>상담 테이블</span></figcaption></figure>
+        <figure class="d tall reveal"><img loading="lazy" src="jj-palm.webp" alt="화이트 벽 앞 야자 화분과 액자" width="900" height="900" /><figcaption><span>04 Corner</span><span>휴식 코너</span></figcaption></figure>
+        <figure class="e tall reveal"><img loading="lazy" src="jj-chair.webp" alt="흰 패브릭 라운지 체어" width="750" height="750" /><figcaption><span>05 Private room</span><span>프라이빗 룸</span></figcaption></figure>
+        <figure class="f reveal"><img loading="lazy" src="jj-books.webp" alt="흰 선반 위에 쌓인 책과 머그컵" width="735" height="735" /><figcaption><span>06 Details</span><span>작은 디테일</span></figcaption></figure>
+      </div>
+      <p class="amen reveal"><span>1:1 private rooms 프라이빗 룸</span><span>Personal showers 개인 샤워실</span><span>Couple room 커플 왁싱룸</span><span>Up to 3 at once 3인 동시 시술</span></p>
+    </div>
+  </section>
+
+  <div class="strip" aria-hidden="true">
+    <div class="track" id="track">
+      <figure><img loading="lazy" src="jj-heart.webp" alt="" width="900" height="879" /></figure>
+      <figure><img loading="lazy" src="jj-brush.webp" alt="" width="749" height="749" /></figure>
+      <figure><img loading="lazy" src="jj-cream.webp" alt="" width="749" height="749" /></figure>
+      <figure><img loading="lazy" src="jj-teddy.webp" alt="" width="749" height="749" /></figure>
+      <figure><img loading="lazy" src="jj-desk.webp" alt="" width="800" height="800" /></figure>
+      <figure><img loading="lazy" src="jj-curtain.webp" alt="" width="750" height="750" /></figure>
+      <figure><img loading="lazy" src="jj-shadow.webp" alt="" width="685" height="833" /></figure>
+      <figure><img loading="lazy" src="jj-vase.webp" alt="" width="750" height="750" /></figure>
+      <figure><img loading="lazy" src="jj-mag.webp" alt="" width="735" height="735" /></figure>
+      <figure><img loading="lazy" src="jj-plant.webp" alt="" width="800" height="800" /></figure>
+    </div>
+  </div>
+
+  <section class="sec mist" id="why" aria-labelledby="why-h">
+    <div class="wrap">
+      <div class="head split reveal">
+        <div>
+          <p class="label">Why JEJE<span class="ko">제제를 선택하는 이유</span></p>
+          <h2 id="why-h" style="margin-top:20px">Trained hands,<br />calm skin.<span class="ko-t">교육하는 손으로, 편안한 피부까지</span></h2>
+        </div>
+        <p class="lead">오랜 시간 수많은 피부를 만나며 '아프지 않은 왁싱'을 다듬어 왔어요.</p>
+      </div>
+      <ul class="why why-wrap reveal">
+        <li><div><b>LYCON Training Center, Paju</b><span>라이콘 교육센터 파주점 · 자디니 스페셜리스트</span></div></li>
+        <li><div><b>Male &amp; female waxers on site</b><span>라이콘 전문가 · 트레이너 남자 왁서 상주, 전문 왁서 4인</span></div></li>
+        <li><div><b>Low-irritation LYCON products</b><span>안전한 라이콘 제품으로 저자극 왁싱</span></div></li>
+        <li><div><b>Calming care for your skin type</b><span>왁싱 후 피부 타입별 진정 케어</span></div></li>
+        <li><div><b>Prenatal-safe products</b><span>임산부 왁싱은 임산부 전용 제품으로</span></div></li>
+        <li><div><b>Aftercare that continues</b><span>왁싱 후에도 이어지는 사후 관리</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="academy-h" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="academy reveal">
+        <div><p class="label">For Waxers<span class="ko">왁서 교육</span></p><h3 id="academy-h" style="margin-top:10px">LYCON seminars in Paju.</h3></div>
+        <p>라이콘 왁싱 · 풀페이스 왁싱 · 헤드스파 세미나를 열고 있어요. 일정과 후기는 블로그에서, 신청은 카카오 채널로.</p>
+        <div class="cta">
+          <a class="btn line" href="https://blog.naver.com/jejewaxing" target="_blank" rel="noopener">Blog <small>일정</small></a>
+          <a class="btn dark" href="http://pf.kakao.com/_xktUcb/chat" target="_blank" rel="noopener">Apply <small>신청</small></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="label">Visit<span class="ko">오시는 길</span></p>
+        <h2 id="visit-h">Find us in Unjeong.<span class="ko-t">야당역 2번 출구에서 180m</span></h2>
+      </div>
+      <div class="visit">
+        <div class="reveal">
+          <dl class="info">
+            <div class="row"><dt>Address<small>주소</small></dt><dd><p>경기 파주시 소리천로 25 유은타워7차 401호<span class="en">401, Yueun Tower 7, 25 Sorichon-ro, Paju</span></p></dd></div>
+            <div class="row"><dt>Walk<small>도보</small></dt><dd><p>경의중앙선 야당역 2번 출구로 나와 운정호수공원 방향으로 공영주차장을 지나 횡단보도를 건너면 바로 보이는 건물이에요. 1층 똘이장군 건물, A동 엘리베이터를 타세요.</p></dd></div>
+            <div class="row"><dt>Car<small>차량</small></dt><dd><p>큰길에서 한 바퀴 돌아 안쪽 대로변으로 들어오면 주차장 입구가 있어요(2층 농협은행 파주운정남지점 건물). 파주 돔나이트, 탑클래스헬스장 건물로 들어오시면 돼요.</p></dd></div>
+            <div class="row"><dt>Hours<small>영업시간</small></dt><dd><div class="hours"><span>Mon – Fri 월–금</span><span>11:00 – 21:00</span><span>Sat 토</span><span>11:00 – 20:00</span><span>Sun 일</span><span>11:00 – 19:00</span></div></dd></div>
+            <div class="row"><dt>Call<small>전화</small></dt><dd><p><a href="tel:050713407754">0507-1340-7754</a></p></dd></div>
+          </dl>
+          <nav class="links" aria-label="예약 · 문의 링크">
+            <a class="main" href="https://naver.me/xPYLWcSH" target="_blank" rel="noopener"><b>Naver Booking</b><span>네이버 예약</span></a>
+            <a href="http://pf.kakao.com/_xktUcb/chat" target="_blank" rel="noopener"><b>Kakao Channel</b><span>카카오 문의</span></a>
+            <a href="https://talk.naver.com/WZLNA4E" target="_blank" rel="noopener"><b>Naver Talk</b><span>네이버 톡톡</span></a>
+            <a href="https://www.instagram.com/jeje_beauty__/" target="_blank" rel="noopener"><b>Instagram</b><span>@jeje_beauty__</span></a>
+            <a href="https://blog.naver.com/jejewaxing" target="_blank" rel="noopener"><b>Blog</b><span>네이버 블로그</span></a>
+            <a href="tel:050713407754"><b>Call</b><span>전화 걸기</span></a>
+          </nav>
+        </div>
+        <iframe class="mapframe reveal" src="https://www.google.com/maps?q=%EA%B2%BD%EA%B8%B0%20%ED%8C%8C%EC%A3%BC%EC%8B%9C%20%EC%86%8C%EB%A6%AC%EC%B2%9C%EB%A1%9C%2025&amp;output=embed" title="제제뷰티 위치 지도" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="jj-logo.png" alt="JEJE BEAUTY 제제뷰티" width="219" height="400" />
+    <div>
+      <p>제제뷰티 · 자디니스파 · 라이콘 트레이닝 센터 파주</p>
+      <p>경기 파주시 소리천로 25 유은타워7차 401호 · 0507-1340-7754</p>
+      <p>© JEJE BEAUTY</p>
+    </div>
+    <nav aria-label="푸터 링크"><a href="https://naver.me/xPYLWcSH" target="_blank" rel="noopener">Naver</a><a href="http://pf.kakao.com/_xktUcb/chat" target="_blank" rel="noopener">Kakao</a><a href="https://www.instagram.com/jeje_beauty__/" target="_blank" rel="noopener">Instagram</a><a href="#top">Top</a></nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* 리빌 (IntersectionObserver + 2.4초 안전망) */
+  var items=[].slice.call(document.querySelectorAll('.reveal'));
+  var show=function(el){ el.classList.add('in'); };
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ show(e.target); io.unobserve(e.target); } }); }, {threshold:.06});
+    items.forEach(function(el){ io.observe(el); });
+    setTimeout(function(){ items.forEach(show); }, 2400);
+  } else { items.forEach(show); }
+
+  /* 히어로 크로스페이드 (setInterval 강제) */
+  var slides=[].slice.call(document.querySelectorAll('#slides img'));
+  var caps=['Soft wax','Spatulas','Treatment room'], si=0;
+  var no=document.getElementById('slide-no'), cap=document.getElementById('slide-cap');
+  setInterval(function(){
+    slides[si].classList.remove('on'); si=(si+1)%slides.length; slides[si].classList.add('on');
+    no.textContent='0'+(si+1)+' / 0'+slides.length; cap.textContent=caps[si];
+  }, 4200);
+
+  /* 필름 스트립 (setInterval 강제 이동 · 끝나면 이어붙여 반복) */
+  var track=document.getElementById('track');
+  if(track){
+    track.innerHTML+=track.innerHTML;
+    var x=0, half=0;
+    var measure=function(){ half=track.scrollWidth/2; };
+    measure(); window.addEventListener('resize', measure);
+    setInterval(function(){
+      if(!half) measure();
+      x-=0.6; if(half && -x>=half) x+=half;
+      track.style.transform='translate3d('+x+'px,0,0)';
+    }, 16);
+  }
+
+  /* 토글 부드럽게 */
+  [].slice.call(document.querySelectorAll('.acc details')).forEach(function(d){
+    var sum=d.querySelector('summary'), panel=d.querySelector('.panel'), busy=false;
+    sum.addEventListener('click', function(e){
+      e.preventDefault(); if(busy) return; busy=true;
+      if(d.open){
+        panel.style.height=panel.scrollHeight+'px';
+        setTimeout(function(){ panel.style.transition='height .35s ease'; panel.style.height='0px'; }, 16);
+        setTimeout(function(){ d.open=false; panel.style.cssText=''; busy=false; }, 400);
+      } else {
+        d.open=true; panel.style.height='0px';
+        setTimeout(function(){ panel.style.transition='height .35s ease'; panel.style.height=panel.scrollHeight+'px'; }, 16);
+        setTimeout(function(){ panel.style.cssText=''; busy=false; }, 400);
+      }
+    });
+  });
+
+  /* 앵커 부드러운 스크롤 (setInterval 구동) */
+  var head=document.querySelector('.site-head');
+  var ease=function(t){ return t<.5 ? 4*t*t*t : 1-Math.pow(-2*t+2,3)/2; };
+  document.addEventListener('click', function(ev){
+    var a=ev.target.closest && ev.target.closest('a[href^="#"]'); if(!a) return;
+    var id=a.getAttribute('href'); if(id.length<2) return;
+    var target=id==='#top' ? document.body : document.querySelector(id); if(!target) return;
+    ev.preventDefault();
+    var off=(head ? head.offsetHeight : 0)+6, startY=window.pageYOffset;
+    var endY=target===document.body ? 0 : Math.max(0, target.getBoundingClientRect().top+startY-off);
+    var dist=endY-startY, dur=Math.min(900, Math.max(420, Math.abs(dist)*.45)), t0=Date.now();
+    var tm=setInterval(function(){ var p=Math.min(1,(Date.now()-t0)/dur); window.scrollTo(0, startY+dist*ease(p)); if(p>=1) clearInterval(tm); }, 16);
+    if(history.replaceState) history.replaceState(null,'',id);
+  });
+})();
+</script>
+</body>
+</html>
