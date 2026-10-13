@@ -214,12 +214,6 @@ h2{ font-size:clamp(2.1rem,5vw,3.6rem); line-height:1.08; }
 @media (min-width:900px){ .why{ grid-template-columns:1fr 1fr; column-gap:60px; } }
 .why-wrap{ padding:0; margin:0; }
 
-/* 필름 스트립 (setInterval 강제 이동) */
-.strip{ overflow:hidden; padding:clamp(40px,6vw,70px) 0; }
-.strip .track{ display:flex; gap:14px; width:max-content; will-change:transform; }
-.strip figure{ margin:0; width:clamp(200px,26vw,320px); flex:none; background:var(--mist); }
-.strip img{ width:100%; aspect-ratio:4/5; object-fit:cover; }
-
 /* Academy */
 .academy{ display:grid; gap:20px; padding:34px 0; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
 .academy h3{ font-size:clamp(1.5rem,3vw,2.1rem); line-height:1.2; }
@@ -245,7 +239,7 @@ h2{ font-size:clamp(2.1rem,5vw,3.6rem); line-height:1.08; }
 .links a.main span{ color:#CFCFCF; }
 @media (hover:hover){ .links a:hover{ background:var(--mist); } .links a.main:hover{ background:var(--neon); color:var(--ink); } .links a.main:hover span{ color:var(--ink); } }
 @media (min-width:600px){ .links{ grid-template-columns:repeat(3,1fr); } }
-.mapframe{ width:100%; height:100%; min-height:380px; border:0; filter:grayscale(1) contrast(1.05); }
+.mapframe{ width:100%; height:100%; min-height:380px; border:0; }
 @media (min-width:900px){ .visit{ grid-template-columns:1fr 1fr; gap:64px; align-items:stretch; } }
 
 /* 푸터 */
@@ -305,7 +299,7 @@ h2{ font-size:clamp(2.1rem,5vw,3.6rem); line-height:1.08; }
       <div class="reveal">
         <p class="label">About<span class="ko">소개</span></p>
         <h2 id="about-h" style="margin-top:20px">Not just hair removal.<span class="ko-t">왁싱은 단순한 제모가 아니에요</span></h2>
-        <p class="lead" style="margin-top:26px">처음이라 불안한 분, 통증 때문에 왁싱을 포기했던 분을 위해 고객 컨디션에 맞춘 1:1 케어로 진행해요. 제제왁싱이 자체 개발한 저통증 왁싱과 진정 케어 프로그램, 그리고 자디니 헤드스파의 쉼까지 한 공간에서.</p>
+        <p class="lead" style="margin-top:26px">처음이라 불안한 분, 통증 때문에 왁싱을 포기했던 분을 위해 고객 컨디션에 맞춘 1:1 케어로 진행해요. 제제왁싱이 자체 개발한 저통증 왁싱과 진정 케어 프로그램, 그리고 자디니 헤드스파의 쉼까지 한 공간에서 누려보세요.</p>
         <div class="facts">
           <div><b>15</b><span><i>Years in beauty</i>미용 경력 15년</span></div>
           <div><b>7</b><span><i>Years of waxing</i>왁싱 7년차</span></div>
@@ -357,7 +351,7 @@ h2{ font-size:clamp(2.1rem,5vw,3.6rem); line-height:1.08; }
           <span class="no">04</span>
           <h3>Head Spa &amp; Body<small>자디니 헤드스파 · 밸리 테라피</small></h3>
           <div class="body">
-            <p>자디니(JARDINI) 아로마 리추얼 헤드스파와 누워서 관리받는 밸리 아로마테라피. 관리보다 쉼이 필요한 날을 위해.</p>
+            <p>자디니(JARDINI) 아로마 리추얼 헤드스파와 누워서 관리받는 밸리 아로마테라피. 관리보다 쉼이 필요한 날이 필요하실 때 추천해요.</p>
             <div class="tags"><span>Aroma head spa 아로마</span><span>Scalp care 스칼프</span><span>Belly therapy 복부</span></div>
           </div>
           <figure><img loading="lazy" src="jj-spa.webp" alt="거품을 낸 두피를 손으로 관리하는 헤드스파" width="640" height="704" /></figure>
@@ -449,21 +443,6 @@ h2{ font-size:clamp(2.1rem,5vw,3.6rem); line-height:1.08; }
     </div>
   </section>
 
-  <div class="strip" aria-hidden="true">
-    <div class="track" id="track">
-      <figure><img loading="lazy" src="jj-heart.webp" alt="" width="900" height="879" /></figure>
-      <figure><img loading="lazy" src="jj-brush.webp" alt="" width="749" height="749" /></figure>
-      <figure><img loading="lazy" src="jj-cream.webp" alt="" width="749" height="749" /></figure>
-      <figure><img loading="lazy" src="jj-teddy.webp" alt="" width="749" height="749" /></figure>
-      <figure><img loading="lazy" src="jj-desk.webp" alt="" width="800" height="800" /></figure>
-      <figure><img loading="lazy" src="jj-curtain.webp" alt="" width="750" height="750" /></figure>
-      <figure><img loading="lazy" src="jj-shadow.webp" alt="" width="685" height="833" /></figure>
-      <figure><img loading="lazy" src="jj-vase.webp" alt="" width="750" height="750" /></figure>
-      <figure><img loading="lazy" src="jj-mag.webp" alt="" width="735" height="735" /></figure>
-      <figure><img loading="lazy" src="jj-plant.webp" alt="" width="800" height="800" /></figure>
-    </div>
-  </div>
-
   <section class="sec mist" id="why" aria-labelledby="why-h">
     <div class="wrap">
       <div class="head split reveal">
@@ -488,7 +467,7 @@ h2{ font-size:clamp(2.1rem,5vw,3.6rem); line-height:1.08; }
     <div class="wrap">
       <div class="academy reveal">
         <div><p class="label">For Waxers<span class="ko">왁서 교육</span></p><h3 id="academy-h" style="margin-top:10px">LYCON seminars in Paju.</h3></div>
-        <p>라이콘 왁싱 · 풀페이스 왁싱 · 헤드스파 세미나를 열고 있어요. 일정과 후기는 블로그에서, 신청은 카카오 채널로.</p>
+        <p>라이콘 왁싱 · 풀페이스 왁싱 · 헤드스파 세미나를 열고 있어요. 일정과 후기는 블로그에서, 신청은 카카오 채널로 부탁드려요.</p>
         <div class="cta">
           <a class="btn line" href="https://blog.naver.com/jejewaxing" target="_blank" rel="noopener">Blog <small>일정</small></a>
           <a class="btn dark" href="http://pf.kakao.com/_xktUcb/chat" target="_blank" rel="noopener">Apply <small>신청</small></a>
@@ -559,20 +538,6 @@ h2{ font-size:clamp(2.1rem,5vw,3.6rem); line-height:1.08; }
     slides[si].classList.remove('on'); si=(si+1)%slides.length; slides[si].classList.add('on');
     no.textContent='0'+(si+1)+' / 0'+slides.length; cap.textContent=caps[si];
   }, 4200);
-
-  /* 필름 스트립 (setInterval 강제 이동 · 끝나면 이어붙여 반복) */
-  var track=document.getElementById('track');
-  if(track){
-    track.innerHTML+=track.innerHTML;
-    var x=0, half=0;
-    var measure=function(){ half=track.scrollWidth/2; };
-    measure(); window.addEventListener('resize', measure);
-    setInterval(function(){
-      if(!half) measure();
-      x-=0.6; if(half && -x>=half) x+=half;
-      track.style.transform='translate3d('+x+'px,0,0)';
-    }, 16);
-  }
 
   /* 토글 부드럽게 */
   [].slice.call(document.querySelectorAll('.acc details')).forEach(function(d){
