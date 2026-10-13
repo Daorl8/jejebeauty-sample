@@ -215,10 +215,20 @@ h2{ font-size:clamp(2.1rem,5vw,3.6rem); line-height:1.08; }
 .why-wrap{ padding:0; margin:0; }
 
 /* Academy */
-.academy{ display:grid; gap:20px; padding:34px 0; border-top:1px solid var(--ink); border-bottom:1px solid var(--ink); }
-.academy h3{ font-size:clamp(1.5rem,3vw,2.1rem); line-height:1.2; }
-.academy p{ margin:0; color:var(--soft); font-size:.9rem; }
-@media (min-width:900px){ .academy{ grid-template-columns:1fr 1.2fr auto; align-items:center; gap:40px; } }
+.aca-top{ display:grid; gap:36px; margin-bottom:clamp(40px,6vw,72px); }
+.aca-top figure{ margin:0; background:var(--mist); }
+.aca-top img{ width:100%; aspect-ratio:4/3; object-fit:cover; }
+@media (min-width:900px){ .aca-top{ grid-template-columns:1.2fr .8fr; gap:80px; align-items:end; } }
+.aca{ display:grid; border-top:1px solid var(--ink); }
+.aca article{ padding:28px 0; border-bottom:1px solid var(--line); }
+.aca .no{ font-family:var(--disp); color:var(--soft); }
+.aca h3{ font-size:clamp(1.6rem,3vw,2.1rem); line-height:1.15; margin-top:10px; }
+.aca h3 small{ display:block; font-family:var(--sans); font-size:.88rem; color:var(--soft); margin-top:8px; }
+.aca ul{ margin:18px 0 0; padding:0; list-style:none; display:grid; gap:6px; font-size:.9rem; }
+.aca li{ padding-left:16px; position:relative; }
+.aca li::before{ content:""; position:absolute; left:0; top:.8em; width:6px; height:1px; background:var(--ink); }
+@media (min-width:900px){ .aca{ grid-template-columns:repeat(3,1fr); } .aca article{ padding:32px 32px 36px 0; border-bottom:0; } .aca article + article{ padding-left:32px; border-left:1px solid var(--line); } }
+.aca-note{ margin:28px 0 0; font-size:.86rem; color:var(--soft); }
 
 /* Visit */
 .visit{ display:grid; gap:44px; }
@@ -263,7 +273,7 @@ h2{ font-size:clamp(2.1rem,5vw,3.6rem); line-height:1.08; }
   <div class="wrap">
     <a class="brand" href="#top" aria-label="JEJE BEAUTY 처음으로"><span>JEJE BEAUTY</span></a>
     <nav class="nav" aria-label="주요 메뉴">
-      <a href="#about">About</a><a href="#services">Services</a><a href="#menu">Menu</a><a href="#studio">Studio</a><a href="#visit">Visit</a>
+      <a href="#about">About</a><a href="#services">Services</a><a href="#menu">Menu</a><a href="#studio">Studio</a><a href="#academy">Academy</a><a href="#visit">Visit</a>
     </nav>
     <a class="btn dark" href="https://naver.me/xPYLWcSH" target="_blank" rel="noopener">Book <small>예약</small></a>
   </div>
@@ -463,16 +473,52 @@ h2{ font-size:clamp(2.1rem,5vw,3.6rem); line-height:1.08; }
     </div>
   </section>
 
-  <section class="sec" aria-labelledby="academy-h" style="padding-bottom:0">
+  <section class="sec" id="academy" aria-labelledby="academy-h">
     <div class="wrap">
-      <div class="academy reveal">
-        <div><p class="label">For Waxers<span class="ko">왁서 교육</span></p><h3 id="academy-h" style="margin-top:10px">LYCON seminars in Paju.</h3></div>
-        <p>라이콘 왁싱 · 풀페이스 왁싱 · 헤드스파 세미나를 열고 있어요. 일정과 후기는 블로그에서, 신청은 카카오 채널로 부탁드려요.</p>
-        <div class="cta">
-          <a class="btn line" href="https://blog.naver.com/jejewaxing" target="_blank" rel="noopener">Blog <small>일정</small></a>
-          <a class="btn dark" href="http://pf.kakao.com/_xktUcb/chat" target="_blank" rel="noopener">Apply <small>신청</small></a>
+      <div class="aca-top">
+        <div class="reveal">
+          <p class="label">Academy<span class="ko">왁서 교육</span></p>
+          <h2 id="academy-h" style="margin-top:20px">LYCON Trainer<br />Center, Paju.<span class="ko-t">라이콘 파주 트레이너 센터 · 원장님을 위한 교육</span></h2>
+          <p class="lead" style="margin-top:26px">살롱에서 직접 만든 기준과 방법을 정리해 함께 나눠요. 라이콘 정식 교육을 받지 않았거나, 실제 시술에서 생기는 문제의 해결법이 궁금한 원장님께 추천해요.</p>
+          <div class="cta" style="margin-top:30px">
+            <a class="btn dark" href="http://pf.kakao.com/_xktUcb/chat" target="_blank" rel="noopener">Apply <small>세미나 신청</small></a>
+            <a class="btn line" href="https://blog.naver.com/jejewaxing" target="_blank" rel="noopener">Schedule <small>일정 · 후기</small></a>
+          </div>
         </div>
+        <figure class="reveal"><img loading="lazy" src="jj-brush.webp" alt="얼음 잔에 꽂힌 일회용 스풀리 브러시" width="749" height="749" /></figure>
       </div>
+      <div class="aca">
+        <article class="reveal">
+          <span class="no">01</span>
+          <h3>Waxing Technique<small>라이콘 왁싱 기술 세미나</small></h3>
+          <ul>
+            <li>라이콘 왁스 제품별 특징과 정확한 사용법</li>
+            <li>하드 · 비즈 · 스트립 · 하이브리드 왁스 시술과 주의사항</li>
+            <li>적정 온도와 점도, 도포 두께, 제거 방법</li>
+            <li>시술 후 진정 케어와 사후 관리 안내</li>
+          </ul>
+        </article>
+        <article class="reveal">
+          <span class="no">02</span>
+          <h3>Full Face Waxing<small>풀페이스 왁싱 세미나 · 상호 실습</small></h3>
+          <ul>
+            <li>피부 타입별 맞춤 아로마 블렌딩</li>
+            <li>기존 메뉴를 시그니처 메뉴로 만드는 방법</li>
+            <li>왁싱 후 홈케어 제품 안내</li>
+            <li>풀페이스 상호 실습</li>
+          </ul>
+        </article>
+        <article class="reveal">
+          <span class="no">03</span>
+          <h3>Head Spa<small>헤드스파 세미나 · LYCON × JARDINI</small></h3>
+          <ul>
+            <li>기존 메뉴는 그대로, 헤드스파를 더하는 방법</li>
+            <li>두피 케어와 프리미엄 스파 프로그램 구성</li>
+            <li>재방문을 만드는 관리 흐름</li>
+          </ul>
+        </article>
+      </div>
+      <p class="aca-note reveal">세미나는 매달 열려요. 날짜 · 비용 · 참석 혜택은 회차마다 달라서 블로그와 인스타그램 공지로 안내하고, 신청은 카카오 채널로 받아요.</p>
     </div>
   </section>
 
